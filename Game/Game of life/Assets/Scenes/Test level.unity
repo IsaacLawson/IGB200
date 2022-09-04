@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactable (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3555083253263064775, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}
+      propertyPath: m_TagString
+      value: Interactable1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}
 --- !u!1 &8828060
@@ -5562,6 +5566,10 @@ PrefabInstance:
     - target: {fileID: 3555083253263064775, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}
       propertyPath: m_Name
       value: Interactable (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555083253263064775, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}
+      propertyPath: m_TagString
+      value: Interactable2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}

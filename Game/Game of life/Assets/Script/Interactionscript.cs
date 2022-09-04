@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -18,7 +19,6 @@ public class Interactionscript : MonoBehaviour
 
     void update()
     {
-
         whatever();
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,30 +27,33 @@ public class Interactionscript : MonoBehaviour
         {
             Debug.Log(other.gameObject.tag);
             interacttxt.enabled = true;
-
+            SceneManager.LoadScene(3);
         }
-
-
+        if (other.gameObject.tag == "Interactable1")
+        {
+            Debug.Log(other.gameObject.tag);
+            interacttxt.enabled = true;
+            SceneManager.LoadScene(4);
+        }
+        if (other.gameObject.tag == "Interactable2")
+        {
+            Debug.Log(other.gameObject.tag);
+            interacttxt.enabled = true;
+            SceneManager.LoadScene(5);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-
-
         interacttxt.enabled = false;
         interat = false;
-
-
-
-
     }
 
     void whatever()
     {
         if (interat == true && Input.GetButtonDown("Interact"))
         {
-            Application.LoadLevel(0);
-
+            SceneManager.LoadScene(0);
         }
     }
 }

@@ -15,40 +15,11 @@ public class Interactionscript : MonoBehaviour
         interacttxt.enabled = false;
         interat = false;
     }
-<<<<<<< Updated upstream
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Interactable")
-        {
-            Debug.Log(other.gameObject.tag);
-            interacttxt.enabled = true;
-
-        }
-
-
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        
-            
-            interacttxt.enabled = false;
-
-        
-
-=======
 
     void update()
     {
-        {
-            if (interat == true && Input.GetButtonDown("Fire1"))
-            {
-                Application.LoadLevel(0);
 
-            }
-
-        }
-        //whatever();
+        whatever();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -56,7 +27,7 @@ public class Interactionscript : MonoBehaviour
         {
             Debug.Log(other.gameObject.tag);
             interacttxt.enabled = true;
-            interat = true;
+
         }
 
 
@@ -68,16 +39,18 @@ public class Interactionscript : MonoBehaviour
 
         interacttxt.enabled = false;
         interat = false;
+
+
+
+
     }
 
     void whatever()
     {
-        if (interat == true && Input.GetButtonDown("Fire1"))
+        if (interat == true && Input.GetButtonDown("Interact"))
         {
             Application.LoadLevel(0);
 
         }
->>>>>>> Stashed changes
-
     }
 }

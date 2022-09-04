@@ -13,8 +13,26 @@ public class Interactionscript : MonoBehaviour
     {
         interacttxt.enabled = false;
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        interacttxt.enabled = true;
+        if (other.gameObject.tag == "Interactable")
+        {
+            Debug.Log(other.gameObject.tag);
+            interacttxt.enabled = true;
+
+        }
+
+
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        
+            
+            interacttxt.enabled = false;
+
+        
+
+
     }
 }

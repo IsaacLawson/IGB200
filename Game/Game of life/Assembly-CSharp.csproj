@@ -56,11 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Scenemanager.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
+    <Compile Include="Assets\Script\Scene changer.cs" />
+    <Compile Include="Assets\Script\Screenpopup.cs" />
     <Compile Include="Assets\Script\WallCollision.cs" />
     <Compile Include="Assets\Script\Interactionscript.cs" />
-    <Compile Include="Assets\Script\Scene changer.cs" />
-    <Compile Include="Assets\Script\Scenemanager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

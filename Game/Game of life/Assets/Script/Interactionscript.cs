@@ -21,25 +21,33 @@ public class Interactionscript : MonoBehaviour
     {
         whatever();
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Interactable")
         {
-            Debug.Log(other.gameObject.tag);
-            interacttxt.enabled = true;
-            SceneManager.LoadScene(3);
+            if (Input.GetKey("e"))
+            {
+                interacttxt.enabled = true;
+                SceneManager.LoadScene(2);
+            }
         }
         if (other.gameObject.tag == "Interactable1")
         {
-            Debug.Log(other.gameObject.tag);
-            interacttxt.enabled = true;
-            SceneManager.LoadScene(4);
+            if (Input.GetKey("e"))
+            {
+                Debug.Log(other.gameObject.tag);
+                interacttxt.enabled = true;
+                SceneManager.LoadScene(3);
+            }
         }
         if (other.gameObject.tag == "Interactable2")
         {
-            Debug.Log(other.gameObject.tag);
-            interacttxt.enabled = true;
-            SceneManager.LoadScene(5);
+            if (Input.GetKey("e"))
+            {
+                Debug.Log(other.gameObject.tag);
+                interacttxt.enabled = true;
+                SceneManager.LoadScene(4);
+            }
         }
     }
 

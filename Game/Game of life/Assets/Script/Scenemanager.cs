@@ -14,6 +14,7 @@ public class Scenemanager : MonoBehaviour
     }
     public void SwitchScene(string scenename)
     {
+        gamemanager.clothesval = 0;
         SceneManager.LoadScene(scenename);
     }
     public void Quitgame()

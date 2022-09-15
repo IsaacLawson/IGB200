@@ -27,6 +27,7 @@ public class Interactionscript : MonoBehaviour
         {
             if (Input.GetKey("e"))
             {
+                gamemanager.clothesval = 3;
                 interacttxt.enabled = true;
                 SceneManager.LoadScene(2);
             }
@@ -35,6 +36,7 @@ public class Interactionscript : MonoBehaviour
         {
             if (Input.GetKey("e"))
             {
+                gamemanager.foodval = 1;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 SceneManager.LoadScene(3);
@@ -44,12 +46,34 @@ public class Interactionscript : MonoBehaviour
         {
             if (Input.GetKey("e"))
             {
+                gamemanager.resumeval = 1;
+                Debug.Log(other.gameObject.tag);
+                interacttxt.enabled = true;
+                SceneManager.LoadScene(4);
+            }
+        }
+        if (other.gameObject.tag == "Interactable3")
+        {
+            if (Input.GetKey("e"))
+            {
+                gamemanager.resumeval = 1;
+                Debug.Log(other.gameObject.tag);
+                interacttxt.enabled = true;
+                SceneManager.LoadScene(4);
+            }
+        }
+        if (other.gameObject.tag == "Interactable4")
+        {
+            if (Input.GetKey("e"))
+            {
+                gamemanager.resumeval = 1;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 SceneManager.LoadScene(4);
             }
         }
     }
+
 
     private void OnTriggerExit2D(Collider2D other)
     {

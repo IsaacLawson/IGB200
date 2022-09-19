@@ -57,13 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Scenemanager.cs" />
+    <Compile Include="Assets\Script\npcmovement.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
+    <Compile Include="Assets\Script\Runaway.cs" />
     <Compile Include="Assets\Script\gamemanager.cs" />
+    <Compile Include="Assets\Script\Npcflee.cs" />
     <Compile Include="Assets\Script\Scene changer.cs" />
     <Compile Include="Assets\Script\Screenpopup.cs" />
     <Compile Include="Assets\Script\WallCollision.cs" />
     <Compile Include="Assets\Script\Interactionscript.cs" />
-    <Compile Include="Assets\Script\Runaway.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -10,6 +10,7 @@ public class Quizminigamemanager : MonoBehaviour
     public int currentQuestion;
 
     public Text QuestionTxt;
+
     // Start is called before the first frame update
     private void Start()
     {

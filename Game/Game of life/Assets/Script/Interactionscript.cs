@@ -23,7 +23,7 @@ public class Interactionscript : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Interactable")
+        if (other.gameObject.tag == "Suitmade1")
         {
             if (Input.GetKey("e"))
             {
@@ -32,7 +32,7 @@ public class Interactionscript : MonoBehaviour
                 SceneManager.LoadScene(2);
             }
         }
-        if (other.gameObject.tag == "Interactable1")
+        if (other.gameObject.tag == "Interactable")
         {
             if (Input.GetKey("e"))
             {

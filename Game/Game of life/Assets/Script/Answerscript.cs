@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Answerscript : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Answerscript : MonoBehaviour
     public Quizminigamemanager quizManager;
     public void answer()
     {
-        if(isCorrect)
+        if (isCorrect)
         {
             Debug.Log("Correct");
             quizManager.correct();
@@ -19,16 +20,5 @@ public class Answerscript : MonoBehaviour
             quizManager.correct();
         }
 
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -2,7 +2,7 @@
 [System.Serializable]
 public class Question {
 
-    public string facts;
+    public string fact;
     public bool isTrue;
 
 }

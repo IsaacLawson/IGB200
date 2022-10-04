@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Main menu.unity
     guid: 6dee9c1904bf5e94daa510e139219d62
+  - enabled: 1
+    path: Assets/Scenes/NTI 1 Transition Dialouge.unity
+    guid: 11b4814ef3257824e8d07502f676e8ce
+  - enabled: 1
+    path: Assets/Scenes/NTI 2 Trans.unity
+    guid: 28ac85bfcf7435d4092b817054069c4d
   - enabled: 1
     path: Assets/Scenes/Test level.unity
     guid: 0eab034a0f366044ba29be77955be08d
@@ -18,15 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/ClothesMinigame 1.unity
     guid: 32b2ae78d4d48774caef588dbd1141a5
   - enabled: 1
-    path: Assets/Scenes/resume.unity
-    guid: 93ef63b3dc8fe9644b623bbb8433c785
-  - enabled: 1
     path: Assets/Scenes/Whattoeat.unity
     guid: 8efa8c95450919c419df9e11e049b2bc
+  - enabled: 1
+    path: Assets/Scenes/resume.unity
+    guid: 93ef63b3dc8fe9644b623bbb8433c785
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: d86cb0b7b83623d4bbaad1882fb94ac6
   - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 5b6c357ca3ecad34d93d79a84a9c58ae
+  - enabled: 1
+    path: Assets/Scenes/Networking_Minigame.unity
+    guid: 7f2607e8a296de645826fac03fc37e8e
+  - enabled: 1
+    path: Assets/Scenes/Quizminigame.unity
+    guid: 098dffa5c4addbe45bd97262b5dbbfe7
   m_configObjects: {}

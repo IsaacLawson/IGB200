@@ -82,6 +82,7 @@
     <Compile Include="Assets\Script\Quizminigame.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\MaterialUIScaler.cs" />
     <Compile Include="Assets\Script\Runaway.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\Toaster.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\ScreenConfig.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\CheckboxFillerControl.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\MaterialUI\Scripts\FPSCounter.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\ColorCopier.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\EZAnim.cs" />
+    <Compile Include="Assets\Script\Question.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\SelectionBoxConfig.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\ShadowGen.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\ButtonInteractableControl.cs" />
@@ -111,8 +113,6 @@
     <Compile Include="Assets\MaterialUI\Scripts\ToastControl.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\MaterialUIVersion.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\ShadowSnap.cs" />
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\Script\Question.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

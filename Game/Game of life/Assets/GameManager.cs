@@ -13,9 +13,6 @@ public class GameManager : MonoBehaviour
     private Question currentQuestion;
 
     [SerializeField]
-    private Text factText;
-
-    [SerializeField]
     private Text TrueAnswerText;
 
     [SerializeField]
@@ -24,8 +21,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float timeBetweenQuestions = 1f;
 
+   // [SerializeField]
+   // private Animator animator;
+
     [SerializeField]
-    private Animator animator;
+    private Text factText;
 
     void Start()
     {
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         int randomQuestionIndex = Random.Range(0, unansweredQuestions.Count);
         currentQuestion = unansweredQuestions[randomQuestionIndex];
 
-        //factText.text = currentQuestion.fact;
+        factText.text = currentQuestion.fact;
 
         if (currentQuestion.isTrue)
         {
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void UserSelectTrue ()
     {
-        animator.SetTrigger("True");
+        //animator.SetTrigger("True");
         if (currentQuestion.isTrue)
         {
             Debug.Log("Correct!");
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
     }
     public void UserSelectFalse()
     {
-        animator.SetTrigger("False");
+        //animator.SetTrigger("False");
         if (currentQuestion.isTrue)
         {
             Debug.Log("Correct!");

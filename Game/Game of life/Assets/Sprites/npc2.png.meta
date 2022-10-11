@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45555d003a21d3344a2b031581ea4783
+guid: b6ef8445c5ce7c849ba1db12a31f99aa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,70 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Charator2_front
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 104
-        width: 15
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ed3fa8549dc531429962827ab087aad
-      internalID: 185081040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Charator2_right
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 104
-        width: 11
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa1d7c97b4d081549a09ecec2f815f25
-      internalID: -1867374497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Charator2_back
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 104
-        width: 15
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b71ee8dd558a28e4e861418464961ba7
-      internalID: 807922490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Charator2left
+      name: npc2 left
       rect:
         serializedVersion: 2
         x: 15
@@ -175,14 +112,77 @@ TextureImporter:
         width: 11
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5359853858916a4e95f7bef6e769d06
-      internalID: -1056836012
+      spriteID: eef1b6691a9a89e4fb8ab1601501ba03
+      internalID: 589078453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc2 back
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 104
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1f81d1185b5f1448557a6482144ce4
+      internalID: -445497207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc2 front
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 104
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56b568fefa4d1143a77284196fa8988
+      internalID: -364424801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc2 right
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 104
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d7010a1e3e5aa4299d4d66317d8580
+      internalID: 2139661188
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Charator2left: -1056836012
-      Charator2_front: 185081040
-      Charator2_right: -1867374497
-      Charator2_back: 807922490
+      npc2 right: 2139661188
+      npc2 back: -445497207
+      npc2 left: 589078453
+      npc2 front: -364424801
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

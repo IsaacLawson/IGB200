@@ -8,6 +8,13 @@ public class Interactionscript : MonoBehaviour
 {
     public TMP_Text interacttxt;
     public GameObject other;
+    public GameObject formalshirt;
+    public GameObject casualshirt;
+    public GameObject casualpant;
+    public GameObject formalpant;
+    public GameObject goodresume;
+    public GameObject newsresume;
+    public GameObject badresume;
     public bool interat;
 
     // Start is called before the first frame update
@@ -23,53 +30,101 @@ public class Interactionscript : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Suitmade1")
+        if (other.tag == "casualshirt")
         {
             if (Input.GetKey("e"))
             {
-                gamemanager.clothesval = 3;
+                gamemanager.clothesval = 1;
                 interacttxt.enabled = true;
-                SceneManager.LoadScene(2);
+                formalshirt.SetActive(false);
+                //SceneManager.LoadScene(2);
             }
         }
-        if (other.gameObject.tag == "Interactable")
+        else if (other.tag == "formalshirt")
         {
             if (Input.GetKey("e"))
             {
-                gamemanager.foodval = 1;
+                gamemanager.clothesval = 2;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
-                SceneManager.LoadScene(3);
+                casualshirt.SetActive(false);
+                
+                //SceneManager.LoadScene(3);
             }
         }
-        if (other.gameObject.tag == "Interactable2")
+        else if (other.tag == "casualpant")
+        {
+            if (Input.GetKey("e"))
+            {
+                gamemanager.pantval = 1;
+                Debug.Log(other.gameObject.tag);
+                interacttxt.enabled = true;
+                formalpant.SetActive(false);
+                //SceneManager.LoadScene(4);
+            }
+        }
+        else if (other.tag == "formalpant")
+        {
+            if (Input.GetKey("e"))
+            {
+                gamemanager.pantval = 2;
+                Debug.Log(other.gameObject.tag);
+                interacttxt.enabled = true;
+                casualpant.SetActive(false);
+                //SceneManager.LoadScene(4);
+            }
+        }
+        else if (other.tag == "badresume")
         {
             if (Input.GetKey("e"))
             {
                 gamemanager.resumeval = 1;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
-                SceneManager.LoadScene(4);
+                newsresume.SetActive(false);
+                goodresume.SetActive(false);
+                //SceneManager.LoadScene(4);
             }
         }
-        if (other.gameObject.tag == "Interactable3")
+        else if (other.tag == "newsresume")
         {
             if (Input.GetKey("e"))
             {
-                gamemanager.resumeval = 1;
+                gamemanager.resumeval = 2;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
-                SceneManager.LoadScene(4);
+                goodresume.SetActive(false);
+                badresume.SetActive(false);
+                //SceneManager.LoadScene(4);
             }
         }
-        if (other.gameObject.tag == "Interactable4")
+        else if (other.tag == "goodresume")
         {
             if (Input.GetKey("e"))
             {
-                gamemanager.resumeval = 1;
+                gamemanager.resumeval = 3;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
-                SceneManager.LoadScene(4);
+                badresume.SetActive(false);
+                newsresume.SetActive(false);
+                //SceneManager.LoadScene(4);
+            }
+        }
+        else if (other.tag == "exit")
+        {
+            Debug.Log("clothes: " + gamemanager.clothesval + ", resume: " + gamemanager.resumeval + ", pants: " + gamemanager.pantval);
+            int score = gamemanager.clothesval + gamemanager.resumeval + gamemanager.pantval;
+            if (Input.GetKey("e"))
+            {
+                if (score == 7)
+                {
+                    SceneManager.LoadScene("interviewwin");
+                }
+                else
+                if (score < 7)
+                {
+                    SceneManager.LoadScene("Interviewlose");
+                }
             }
         }
     }

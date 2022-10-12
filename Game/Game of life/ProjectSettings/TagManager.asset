@@ -7,6 +7,14 @@ TagManager:
   - Interactable
   - Interactable1
   - Interactable2
+  - casualshirt
+  - formalshirt
+  - formalpant
+  - casualpant
+  - badresume
+  - newsresume
+  - goodresume
+  - exit
   layers:
   - Default
   - TransparentFX

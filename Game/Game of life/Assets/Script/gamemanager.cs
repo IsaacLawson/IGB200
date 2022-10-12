@@ -6,6 +6,6 @@ public class gamemanager
 {
     public static int clothesval;
     public static int storeitem;
-    public static int foodval;
+    public static int pantval;
     public static int resumeval;
 }

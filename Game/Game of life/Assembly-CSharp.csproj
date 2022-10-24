@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\MaterialUI\Scripts\SelectionBoxSubscriber.cs" />
     <Compile Include="Assets\Script\networkingtimer.cs" />
+    <Compile Include="Assets\Script\showText.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\SnapButtonToText.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\TextInputLine.cs" />
     <Compile Include="Assets\MaterialUI\Scripts\RippleAnim.cs" />

@@ -15,6 +15,10 @@ TagManager:
   - newsresume
   - goodresume
   - exit
+  - MaterialButtonLayer
+  - MaterialText
+  - MaterialRadioButton
+  - tutorialexit
   layers:
   - Default
   - TransparentFX

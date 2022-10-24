@@ -1364,18 +1364,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 268063323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6510383635ddf564e81879b804272eee, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ea3c461542e981448d995360961b79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interacttxt: {fileID: 893552078}
-  other: {fileID: 0}
-  formalshirt: {fileID: 0}
-  casualshirt: {fileID: 0}
-  casualpant: {fileID: 0}
-  formalpant: {fileID: 0}
-  goodresume: {fileID: 0}
-  newsresume: {fileID: 0}
-  badresume: {fileID: 0}
+  interacttxt: {fileID: 0}
+  tutorialexit: {fileID: 0}
   interat: 0
 --- !u!1 &276015749
 GameObject:
@@ -3832,11 +3825,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555083253263064775, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}
       propertyPath: m_Name
-      value: Exit
+      value: tutorialexit
       objectReference: {fileID: 0}
     - target: {fileID: 3555083253263064775, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}
       propertyPath: m_TagString
-      value: exit
+      value: tutorialexit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 528e8f628bee55e45b535bb581ab9177, type: 3}

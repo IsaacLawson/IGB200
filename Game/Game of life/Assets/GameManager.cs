@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Text factText;
 
+
     void Start()
     {
         if (unansweredQuestions == null || unansweredQuestions.Count == 0)
@@ -53,6 +54,8 @@ public class GameManager : MonoBehaviour
             TrueAnswerText.text = "Incorrect";
             FalseAnswerText.text = "Correct";
         }
+        gamemanager.quizval += 1;
+        Debug.Log(gamemanager.quizval);
     }
 
     IEnumerator TransitionToNextQuestion ()

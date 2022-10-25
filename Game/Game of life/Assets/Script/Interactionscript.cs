@@ -37,7 +37,6 @@ public class Interactionscript : MonoBehaviour
                 gamemanager.clothesval = 1;
                 interacttxt.enabled = true;
                 formalshirt.SetActive(false);
-                //SceneManager.LoadScene(2);
             }
         }
         else if (other.tag == "formalshirt")
@@ -48,8 +47,6 @@ public class Interactionscript : MonoBehaviour
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 casualshirt.SetActive(false);
-                
-                //SceneManager.LoadScene(3);
             }
         }
         else if (other.tag == "casualpant")
@@ -60,7 +57,6 @@ public class Interactionscript : MonoBehaviour
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 formalpant.SetActive(false);
-                //SceneManager.LoadScene(4);
             }
         }
         else if (other.tag == "formalpant")
@@ -71,7 +67,6 @@ public class Interactionscript : MonoBehaviour
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 casualpant.SetActive(false);
-                //SceneManager.LoadScene(4);
             }
         }
         else if (other.tag == "badresume")
@@ -83,7 +78,6 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 newsresume.SetActive(false);
                 goodresume.SetActive(false);
-                //SceneManager.LoadScene(4);
             }
         }
         else if (other.tag == "newsresume")
@@ -95,7 +89,6 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 goodresume.SetActive(false);
                 badresume.SetActive(false);
-                //SceneManager.LoadScene(4);
             }
         }
         else if (other.tag == "goodresume")
@@ -107,7 +100,6 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 badresume.SetActive(false);
                 newsresume.SetActive(false);
-                //SceneManager.LoadScene(4);
             }
         }
         else if (other.tag == "exit")
@@ -135,7 +127,6 @@ public class Interactionscript : MonoBehaviour
         interacttxt.enabled = false;
         interat = false;
     }
-
     void whatever()
     {
         if (interat == true && Input.GetButtonDown("Interact"))

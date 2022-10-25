@@ -14,7 +14,7 @@ public class Scenemanager : MonoBehaviour
     }
     public void SwitchScene(string scenename)
     {
-
+        gamemanager.first = true;
         SceneManager.LoadScene(scenename);
     }
     public void Quitgame()

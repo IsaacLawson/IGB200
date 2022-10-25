@@ -9,4 +9,6 @@ public class gamemanager
     public static int pantval;
     public static int resumeval;
     public static int npcval;
+    public static int quizval;
+    public static bool first;
 }

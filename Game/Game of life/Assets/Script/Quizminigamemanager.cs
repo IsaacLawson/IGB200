@@ -16,13 +16,11 @@ public class Quizminigamemanager : MonoBehaviour
     {
         generateQuestion();
     }
-
     public void correct()
     {
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
     }
-
     void setAnswer()
     {
         for (int i = 0; i < options.Length; i++)
@@ -39,7 +37,6 @@ public class Quizminigamemanager : MonoBehaviour
     void generateQuestion()
     {
         currentQuestion = Random.Range(0, QnA.Count);
-
         QuestionTxt.text = QnA[currentQuestion].questions;
         setAnswer();
     }

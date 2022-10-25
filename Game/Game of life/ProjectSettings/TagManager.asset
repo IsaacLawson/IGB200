@@ -19,6 +19,13 @@ TagManager:
   - MaterialText
   - MaterialRadioButton
   - tutorialexit
+  - Npc
+  - Countdown
+  - Wall
+  - RWall
+  - LWall
+  - TWall
+  - DWall
   layers:
   - Default
   - TransparentFX

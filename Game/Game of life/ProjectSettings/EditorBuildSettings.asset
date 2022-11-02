@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Main menu.unity
     guid: 6dee9c1904bf5e94daa510e139219d62
@@ -26,12 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Networking_Minigame.unity
     guid: 7f2607e8a296de645826fac03fc37e8e
-  - enabled: 0
-    path: Assets/Scenes/NTI 1 Transition Dialouge.unity
-    guid: 11b4814ef3257824e8d07502f676e8ce
   - enabled: 1
-    path: Assets/Scenes/NTI 2 Trans 2.unity
-    guid: 1a548a7248f01e64999c02ae2f1ce544
+    path: Assets/Scenes/NetworkingLoss.unity
+    guid: b7640af695b3d6a4a8fb9542ca26347a
   - enabled: 1
     path: Assets/Scenes/heading to uni 1.unity
     guid: 1c4556fc7d4f9f245af9bede92493142
@@ -47,8 +41,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClothesMinigame 1.unity
     guid: 32b2ae78d4d48774caef588dbd1141a5
-  - enabled: 1
-    path: Assets/Scenes/Whattoeat.unity
+  - enabled: 0
+    path: Assets/Scenes/Networkinglose.unity
     guid: 8efa8c95450919c419df9e11e049b2bc
   - enabled: 1
     path: Assets/Scenes/resume.unity

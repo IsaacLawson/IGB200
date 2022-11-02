@@ -864,7 +864,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Test level
+          m_StringArgument: Networking_Minigame
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1492344575
@@ -963,8 +963,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You didn't get hired. \n\nnext time try wearing better clothes or taking
-    a better resume!\n\n"
+  m_text: "You didn't get to know enough people. \n\nTry touching more people next
+    time! \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

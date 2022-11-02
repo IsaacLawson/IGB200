@@ -24,7 +24,7 @@ public GameObject other;
 
         if (currentTime <= 0)
         {
-            SceneManager.LoadScene("Interviewlose");
+            SceneManager.LoadScene("NetworkingLoss");
         }
         else
         {
@@ -32,7 +32,7 @@ public GameObject other;
             {
                 if (score == 16)
                 {
-                    SceneManager.LoadScene("interviewwin");
+                    SceneManager.LoadScene("NTI 1 Trans 0");
                 }
             }
         }

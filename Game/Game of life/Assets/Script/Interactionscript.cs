@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Interactionscript : MonoBehaviour
 {
@@ -17,12 +18,29 @@ public class Interactionscript : MonoBehaviour
     public GameObject badresume;
     public bool interat;
 
+    public Image formalshirtsprite;
+    public Image casualshirtsprite;
+    public Image casualpantsprite;
+    public Image formalpantsprite;
+    public Image goodresumesprite;
+    public Image newsresumesprite;
+    public Image badresumesprite;
+
+
     // Start is called before the first frame update
     void Start()
     {
         interacttxt.enabled = false;
         interat = false;
-    }
+
+        formalshirtsprite.enabled = false;
+        casualshirtsprite.enabled = false;
+        casualpantsprite.enabled = false;
+        formalpantsprite.enabled = false;
+        goodresumesprite.enabled = false;
+        newsresumesprite.enabled = false;
+        badresumesprite.enabled = false;
+}
 
     void update()
     {
@@ -38,6 +56,9 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 formalshirt.SetActive(false);
                 casualshirt.SetActive(false);
+
+
+                casualshirtsprite.enabled = true;
             }
         }
         else if (other.tag == "formalshirt")
@@ -49,6 +70,8 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 casualshirt.SetActive(false);
                 formalshirt.SetActive(false);
+
+                formalshirtsprite.enabled = true;
             }
         }
         else if (other.tag == "casualpant")
@@ -58,8 +81,10 @@ public class Interactionscript : MonoBehaviour
                 gamemanager.pantval = 1;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
-                formalpant.SetActive(false);
+               formalpant.SetActive(false);
                 casualpant.SetActive(false);
+
+                casualpantsprite.enabled = true;
             }
         }
         else if (other.tag == "formalpant")
@@ -71,6 +96,8 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 casualpant.SetActive(false);
                 formalpant.SetActive(false);
+
+                formalpantsprite.enabled = true;
             }
         }
         else if (other.tag == "badresume")
@@ -83,6 +110,8 @@ public class Interactionscript : MonoBehaviour
                 newsresume.SetActive(false);
                 goodresume.SetActive(false);
                 badresume.SetActive(false);
+
+                badresumesprite.enabled = true;
             }
         }
         else if (other.tag == "newsresume")
@@ -95,6 +124,8 @@ public class Interactionscript : MonoBehaviour
                 goodresume.SetActive(false);
                 badresume.SetActive(false);
                 newsresume.SetActive(false);
+
+                newsresumesprite.enabled = true;
             }
         }
         else if (other.tag == "goodresume")
@@ -107,6 +138,8 @@ public class Interactionscript : MonoBehaviour
                 badresume.SetActive(false);
                 newsresume.SetActive(false);
                 goodresume.SetActive(false);
+
+                goodresumesprite.enabled = true;
             }
         }
         else if (other.tag == "exit")

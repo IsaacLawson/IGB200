@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     private bool left;
     private bool collide;
 
+    [SerializeField] private AudioSource Footstep3;
+    [SerializeField] private AudioSource Footstep2;
+
     void Start()
     {
         left = true;
@@ -38,17 +41,21 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.D)&& right)
         {
             //When the D key is clicked, the player will move to the right
+            
             transform.position += Vector3.right * moveSpeed * Time.deltaTime;
+            Footstep3.Play();
             //icon change
             leftside.SetActive(false);
             rightside.SetActive(true);
             front.SetActive(false);
             back.SetActive(false);
+            
         }
         else if (Input.GetKey(KeyCode.A)&& left)
         {
             //When the A key is clicked, the player will begin moving to the left 
             transform.position += Vector3.right * -moveSpeed * Time.deltaTime;
+            Footstep3.Play();
             //icon change
             leftside.SetActive(true);
             rightside.SetActive(false);
@@ -59,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //When the W key is clicked, the player will begin moving forewards
             transform.position += Vector3.up * moveSpeed * Time.deltaTime;
+            Footstep2.Play();
             //icon change
             leftside.SetActive(false);
             rightside.SetActive(false);
@@ -69,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //When the S key is Clicked, the player will begin moving backwards
             transform.position += Vector3.up * -moveSpeed * Time.deltaTime;
+            Footstep2.Play();
             //icon change
             leftside.SetActive(false);
             rightside.SetActive(false);

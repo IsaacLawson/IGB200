@@ -21,8 +21,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float timeBetweenQuestions = 1f;
 
-   // [SerializeField]
-   // private Animator animator;
+    // [SerializeField]
+    // private Animator animator;
+
+    [SerializeField] private AudioSource IncorrectAnswer;
+    [SerializeField] private AudioSource CorrectAnswer;
 
     [SerializeField]
     private Text factText;
@@ -72,9 +75,11 @@ public class GameManager : MonoBehaviour
         //animator.SetTrigger("True");
         if (currentQuestion.isTrue)
         {
+            CorrectAnswer.Play();
             Debug.Log("Correct!");
         } else
         {
+            IncorrectAnswer.Play();
             Debug.Log("Incorrect!");
         }
 
@@ -85,10 +90,12 @@ public class GameManager : MonoBehaviour
         //animator.SetTrigger("False");
         if (currentQuestion.isTrue)
         {
+            CorrectAnswer.Play();
             Debug.Log("Correct!");
         }
         else
         {
+            IncorrectAnswer.Play();
             Debug.Log("Incorrect!");
         }
 

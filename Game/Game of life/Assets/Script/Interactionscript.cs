@@ -26,6 +26,10 @@ public class Interactionscript : MonoBehaviour
     public Image newsresumesprite;
     public Image badresumesprite;
 
+    [SerializeField] private AudioSource WritingResume;
+    [SerializeField] private AudioSource Clothesnoise;
+    [SerializeField] private AudioSource Pantson;
+    [SerializeField] private AudioSource Usingthekeyonthedoor;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +60,7 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 formalshirt.SetActive(false);
                 casualshirt.SetActive(false);
-
+                Clothesnoise.Play();
 
                 casualshirtsprite.enabled = true;
             }
@@ -70,7 +74,7 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 casualshirt.SetActive(false);
                 formalshirt.SetActive(false);
-
+                Clothesnoise.Play();
                 formalshirtsprite.enabled = true;
             }
         }
@@ -83,7 +87,7 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                formalpant.SetActive(false);
                 casualpant.SetActive(false);
-
+                Pantson.Play();
                 casualpantsprite.enabled = true;
             }
         }
@@ -96,7 +100,7 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 casualpant.SetActive(false);
                 formalpant.SetActive(false);
-
+                Pantson.Play();
                 formalpantsprite.enabled = true;
             }
         }
@@ -107,6 +111,7 @@ public class Interactionscript : MonoBehaviour
                 gamemanager.resumeval = 1;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
+                WritingResume.Play();
                 newsresume.SetActive(false);
                 goodresume.SetActive(false);
                 badresume.SetActive(false);
@@ -117,6 +122,7 @@ public class Interactionscript : MonoBehaviour
         else if (other.tag == "newsresume")
         {
             if (Input.GetKey("e"))
+                
             {
                 gamemanager.resumeval = 2;
                 Debug.Log(other.gameObject.tag);
@@ -124,7 +130,7 @@ public class Interactionscript : MonoBehaviour
                 goodresume.SetActive(false);
                 badresume.SetActive(false);
                 newsresume.SetActive(false);
-
+                WritingResume.Play();
                 newsresumesprite.enabled = true;
             }
         }
@@ -135,6 +141,7 @@ public class Interactionscript : MonoBehaviour
                 gamemanager.resumeval = 3;
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
+                WritingResume.Play();
                 badresume.SetActive(false);
                 newsresume.SetActive(false);
                 goodresume.SetActive(false);
@@ -148,6 +155,7 @@ public class Interactionscript : MonoBehaviour
             int score = gamemanager.clothesval + gamemanager.resumeval + gamemanager.pantval;
             if (Input.GetKey("e"))
             {
+                Usingthekeyonthedoor.Play();
                 if (score == 7)
                 {
                     SceneManager.LoadScene("interviewwin");

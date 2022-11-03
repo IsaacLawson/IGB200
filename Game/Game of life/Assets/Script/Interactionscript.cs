@@ -37,6 +37,7 @@ public class Interactionscript : MonoBehaviour
                 gamemanager.clothesval = 1;
                 interacttxt.enabled = true;
                 formalshirt.SetActive(false);
+                casualshirt.SetActive(false);
             }
         }
         else if (other.tag == "formalshirt")
@@ -47,6 +48,7 @@ public class Interactionscript : MonoBehaviour
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 casualshirt.SetActive(false);
+                formalshirt.SetActive(false);
             }
         }
         else if (other.tag == "casualpant")
@@ -57,6 +59,7 @@ public class Interactionscript : MonoBehaviour
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 formalpant.SetActive(false);
+                casualpant.SetActive(false);
             }
         }
         else if (other.tag == "formalpant")
@@ -67,6 +70,7 @@ public class Interactionscript : MonoBehaviour
                 Debug.Log(other.gameObject.tag);
                 interacttxt.enabled = true;
                 casualpant.SetActive(false);
+                formalpant.SetActive(false);
             }
         }
         else if (other.tag == "badresume")
@@ -78,6 +82,7 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 newsresume.SetActive(false);
                 goodresume.SetActive(false);
+                badresume.SetActive(false);
             }
         }
         else if (other.tag == "newsresume")
@@ -89,6 +94,7 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 goodresume.SetActive(false);
                 badresume.SetActive(false);
+                newsresume.SetActive(false);
             }
         }
         else if (other.tag == "goodresume")
@@ -100,6 +106,7 @@ public class Interactionscript : MonoBehaviour
                 interacttxt.enabled = true;
                 badresume.SetActive(false);
                 newsresume.SetActive(false);
+                goodresume.SetActive(false);
             }
         }
         else if (other.tag == "exit")

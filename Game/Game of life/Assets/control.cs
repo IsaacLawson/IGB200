@@ -20,7 +20,7 @@ public class control : MonoBehaviour
     {
         if (gamemanager.quizval >= 4)
         {
-            SceneManager.LoadScene("interviewwin");
+            SceneManager.LoadScene("Ending");
         }
     }
 }

@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TLT.unity
     guid: f754d3920ab407a4b81305d8b284718b
   - enabled: 1
-    path: Assets/Scenes/Networkingintro.unity
+    path: Assets/Scenes/Clothesintro.unity
     guid: 3b630317aafcfc840bd781299da7bfe3
   - enabled: 1
     path: Assets/Scenes/introtext.unity
@@ -71,4 +71,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 9287fe745837232449595105bdbc22cc
+  - enabled: 1
+    path: Assets/Scenes/NTI 1 Trans 0.unity
+    guid: 7e2ecf875a5412948af295c6fd1b8405
+  - enabled: 1
+    path: Assets/Scenes/TL intro.unity
+    guid: d61d965d1ba1b114f91532b4f0332a90
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 803129a74b7158c4ca4a8eb7f7cc9f69
   m_configObjects: {}

@@ -181,7 +181,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You have Finished the game Good work! '
+  m_text: 'You have finished the game.
+
+    Good work! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -863,7 +865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000045776, y: -14}
+  m_AnchoredPosition: {x: 0.000037572, y: -89}
   m_SizeDelta: {x: 1114.5736, y: 245.8029}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789162421
@@ -888,7 +890,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Credits
 
-    Programmer: Thomas P
+    Programmer: Thomas Pham
 
     Artist: Isaac Lawson
 
@@ -1005,7 +1007,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000034332, y: 231}
+  m_AnchoredPosition: {x: 0.000034332, y: 142.63}
   m_SizeDelta: {x: 417.0902, y: 150.0318}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873329368
@@ -1028,7 +1030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'And remember if you beleive in yourself you can get a lot done! '
+  m_text: 'And remember if you believe in yourself you can get a lot done! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

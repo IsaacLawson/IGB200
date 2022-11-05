@@ -914,7 +914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 699068697328804098, guid: 8317a9d6020f90b4c8fecc605487824b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: TLT
+      value: Clothesintro
       objectReference: {fileID: 0}
     - target: {fileID: 3007713646754581917, guid: 8317a9d6020f90b4c8fecc605487824b, type: 3}
       propertyPath: m_Name

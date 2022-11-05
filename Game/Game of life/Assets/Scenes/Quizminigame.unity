@@ -1173,8 +1173,14 @@ MonoBehaviour:
     isTrue: 0
   - fact: Networking is important for building connections
     isTrue: 1
-  - fact: 
-    isTrue: 0
+  - fact: Casual clothing fine for university
+    isTrue: 1
+  - fact: Making a good impression is a great way to help you get a job
+    isTrue: 1
+  - fact: Printing your resume on the back of a bill is a good idea
+    isTrue: 1
+  - fact: Can you go to university if you work towards it?
+    isTrue: 1
   TrueAnswerText: {fileID: 1836404270}
   FalseAnswerText: {fileID: 1959640204}
   timeBetweenQuestions: 1
